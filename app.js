@@ -30,6 +30,35 @@ let index = 0;
 //     index++;
 // }while(index<5)
 
-nameArray.forEach(name=>{
-    console.log(name)
-})
+// nameArray.forEach(name=>{
+//     console.log(name)
+// })
+
+class Student{
+    name;
+    age;
+    address;
+    nic;
+
+    constructor(name, age, address, nic){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.nic = nic;
+    }
+
+}
+
+let saman = new Student("saman", 20, "kelaniya", 12345678);
+
+console.log(saman)
+
+
+let kamal = {
+    name: "kamal",
+    age: 25,
+    address: "panadura",
+    nic: "123456789V"
+}
+
+console.log(kamal)
