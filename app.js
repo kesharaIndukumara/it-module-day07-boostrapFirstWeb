@@ -18,9 +18,18 @@ let nameArray = ["saman", "sunil", "nimal","kamal"];
 //     console.log(name);
 // }
 
-// let index = 0;
+let index = 0;
+
 // while(index<5){
 //     console.log(nameArray[index]);
 //     index++;
 // }
 
+// do{
+//     console.log(nameArray[index])
+//     index++;
+// }while(index<5)
+
+nameArray.forEach(name=>{
+    console.log(name)
+})
