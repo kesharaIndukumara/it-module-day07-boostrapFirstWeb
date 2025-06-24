@@ -34,24 +34,24 @@ let index = 0;
 //     console.log(name)
 // })
 
-class Student{
-    name;
-    age;
-    address;
-    nic;
+// class Student{
+//     name;
+//     age;
+//     address;
+//     nic;
 
-    constructor(name, age, address, nic){
-        this.name = name;
-        this.age = age;
-        this.address = address;
-        this.nic = nic;
-    }
+//     constructor(name, age, address, nic){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//         this.nic = nic;
+//     }
 
-}
+// }
 
-let saman = new Student("saman", 20, "kelaniya", 12345678);
+// let saman = new Student("saman", 20, "kelaniya", 12345678);
 
-console.log(saman)
+// console.log(saman)
 
 
 let kamal = {
@@ -61,4 +61,6 @@ let kamal = {
     nic: "123456789V"
 }
 
-console.log(kamal)
+console.log(kamal.name)
+
+document.getElementById("head-h2").innerHTML = "Hello, " + kamal.name;
