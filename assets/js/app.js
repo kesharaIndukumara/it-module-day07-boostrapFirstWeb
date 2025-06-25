@@ -68,7 +68,8 @@ let index = 0;
 // document.getElementById("address").innerHTML = "Address: "+ kamal.address;
 // document.getElementById("nic").innerHTML = "NIC: " + kamal.nic;
 
-let txtInput = document.getElementById("txt-box");
+let number01 = document.getElementById("txt-box01");
+let number02 = document.getElementById("txt-box02");
 // let btnClick = document.getElementById("btn-click");
 let btnClear = document.getElementById("btn-clear");
 
@@ -78,9 +79,11 @@ let btnClear = document.getElementById("btn-clear");
 
 btnClear.addEventListener("click",function(){
     document.getElementById("set-name").innerHTML = "Hello JavaScript";
-    txtInput.value = "";
+    number01.value = "";
+    number02.value = "";
 })
 
 function helloText(){
-    document.getElementById("set-name").innerHTML = "Hello " + txtInput.value;
+    document.getElementById("set-name").innerHTML = parseInt(number01.value) + parseInt(number02.value);
+    //console.log( parseInt(number01.value))
 }
