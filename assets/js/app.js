@@ -54,13 +54,33 @@ let index = 0;
 // console.log(saman)
 
 
-let kamal = {
-    name: "kamal",
-    age: 25,
-    address: "panadura",
-    nic: "123456789V"
+// let kamal = {
+//     name: "kamal",
+//     age: 25,
+//     address: "panadura",
+//     nic: "123456789V"
+// }
+
+// console.log(kamal.name)
+
+// document.getElementById("name").innerHTML = "Details of " + kamal.name;
+// document.getElementById("age").innerHTML = "Age: " + kamal.age;
+// document.getElementById("address").innerHTML = "Address: "+ kamal.address;
+// document.getElementById("nic").innerHTML = "NIC: " + kamal.nic;
+
+let txtInput = document.getElementById("txt-box");
+// let btnClick = document.getElementById("btn-click");
+let btnClear = document.getElementById("btn-clear");
+
+// btnClick.addEventListener("click",function(){
+//     document.getElementById("set-name").innerHTML = "Hello " + txtInput.value;
+// })
+
+btnClear.addEventListener("click",function(){
+    document.getElementById("set-name").innerHTML = "Hello JavaScript";
+    txtInput.value = "";
+})
+
+function helloText(){
+    document.getElementById("set-name").innerHTML = "Hello " + txtInput.value;
 }
-
-console.log(kamal.name)
-
-document.getElementById("head-h2").innerHTML = "Hello, " + kamal.name;
